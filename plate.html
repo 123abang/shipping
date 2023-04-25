@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b49d1e3afe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/jquery.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="img/download.png">
+    <style>
+        body{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+
+}
+.navbar-nav {
+    gap: 30px;
+
+}
+.sky{
+    color: blue;
+    font-size: 60px;
+    font-family: monospace;
+}
+.sky:hover{
+    color: white;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.spaced{
+    height: 600px;
+}
+.her{
+    height: 240px;
+    text-align: center;
+}
+.halo{
+    line-height: 30px;
+}
+.homes{
+    color: white;
+}
+.homes:hover{
+    color: blue;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><h1 class="sky">SkyXpress</h1></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul  class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item">
+            <a class="nav-link" href="https://au.mobile.yahoo.com/mail?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACOMPQqcxXJdZSrhJDZzaT35tPmdY7OhnSr9kxrEaKCs08bmv7WPj-BNDCO4S0teIOy6UuEmEA3bRkdi4k3yHFQ9n6k2uMOa40nzqkqJIAqndDLx63yezq_1DbyXemgjykfcDUvsTRvtK8ipZMsdrZqBl7zn654y2pkNHbV30k0j">Contact</a>
+          </li>
+        </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+      </nav><br>
+      <h1 style="text-align: center;">TRACKING</h1>
+      <img src="img/barcode.png" alt="">
+      <h3 style="margin-left: 1200px;">Current State: <span style="font-size: 20px; border: solid green; background-color: green; border-radius: 10px;">Approved</span></h3>
+      <table id="customers">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>North/South</td>
+          <td>Simon Crowther</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris spécialités</td>
+          <td>Marie Bertrand</td>
+          <td>France</td>
+        </tr>
+      </table>
+      <div class="spaced col-12 bg-dark"><br>
+        <div class="halo row">
+          <div class="her col-4 bg-dark">
+            <h1 style="color: red;">CONTACT INFORMATION</h1>
+            <hr style="background-color: blue;">
+            <ul style=" font-size: 30px;" class="homes">
+              <li><i class="homes fa fa-envelope" aria-hidden="true"></i>&nbsp;@skyxpress.com</li><br>
+              <li><i class="homes fa fa-mobile" aria-hidden="true"></i>&nbsp;Call Us: 1-800-123-1234</li><br>
+              <li><i class="homes fa fa-map-marker" aria-hidden="true"></i>&nbsp;Brooklyn, NY 10036, United States</li><br>
+            </ul>
+          </div>
+          <div class="her col-4 bg-dark">
+            <h1 style="color: red;">ABOUT US</h1>
+            <hr style="background-color: blue;">
+            <ul>
+              <p style=" font-size: 30px;" class="homes">History</p><br>
+              <p style=" font-size: 30px;" class="homes">Our staff</p><br>
+              <p style=" font-size: 30px;" class="homes">Our Partners</p><br>
+              <p style=" font-size: 30px;" class="homes">Blog</p>
+            </ul>
+          </div>
+          <div class="her col-4 bg-dark">
+            <h1 style="color: red;">OPEN HOURS</h1>
+            <hr style="background-color: blue;">
+            <P class="homes">Mon - Fri 9am-5pm EST</P>
+            <P class="homes">Sat 10am-3pm EST</P>
+          </div>
+        </div>
+        <p style="margin-top: 170px;margin-left: 600px; font-size: 2;l.,m0px;">Copyright ©2023 All rights reserved | sky Xpress Delivery Service</p>
+      </div>
+</body>
+</html>
